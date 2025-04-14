@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Orders</title>
+</head>
+<body>
+    <h2>Order History</h2>
+    <table border="1">
+        <tr>
+            <th>Order ID</th>
+            <th>Username</th>
+            <th>Product</th>
+            <th>Quantity</th>
+        </tr>
+        {% for order in orders %}
+        <tr>
+            <td>{{ order['order_id'] }}</td>
+            <td>{{ order['user_name'] }}</td>
+            <td>{{ order['product_name'] }}</td>
+            <td>{{ order['quantity'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="http://127.0.0.1:5002/">Place New Order</a>
+</body>
+</html>
