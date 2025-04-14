@@ -7,7 +7,7 @@
 
 # split into 3 termina
 ```
-python Database init_db.py
+python Database/init_db.py
 python auth_service.py
 python product_service.py
 python order_service.py
